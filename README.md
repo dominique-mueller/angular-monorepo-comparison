@@ -1,0 +1,2 @@
+# angular-monorepo-comparison
+WIP
