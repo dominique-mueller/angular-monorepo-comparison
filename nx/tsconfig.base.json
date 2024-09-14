@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@scope/core": ["libs/core/src/index.ts"],
+      "@scope/core-button": ["libs/core-button/src/index.ts"],
+      "@scope/core-id": ["libs/core-id/src/index.ts"],
+      "@scope/core-input": ["libs/core-input/src/index.ts"],
+      "@scope/core-label": ["libs/core-label/src/index.ts"],
+      "@scope/core-textarea": ["libs/core-textarea/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

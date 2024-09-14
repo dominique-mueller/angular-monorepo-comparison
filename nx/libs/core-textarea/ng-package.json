@@ -1,0 +1,11 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/libs/core-textarea",
+  "lib": {
+    "entryFile": "src/index.ts"
+  },
+  "allowedNonPeerDependencies": [
+    "@scope/core-id",
+    "@scope/core-label"
+  ]
+}
