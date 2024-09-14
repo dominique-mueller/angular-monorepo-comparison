@@ -1,0 +1,52 @@
+{
+  "name": "@scope/monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "build": "npm run build:libraries && npm run build:documentation",
+    "build:core": "ng build core",
+    "build:core-id": "ng build core-id",
+    "build:core-label": "ng build core-label",
+    "build:core-button": "ng build core-button",
+    "build:core-input": "ng build core-input",
+    "build:core-textarea": "ng build core-textarea",
+    "build:libraries": "npm run build:core-id && npm run build:core-label && npm run build:core-button && npm run build:core-input && npm run build:core-textarea && npm run build:core",
+    "build:documentation": "ng build documentation",
+    "clean:cache": "rimraf .angular/",
+    "clean:dist": "rimraf dist/",
+    "reset": "npm run clean:cache && npm run clean:dist && rimraf node_modules/",
+    "serve:documentation:dist": "http-server ./dist/documentation/browser -o",
+    "serve:documentation": "ng serve documentation --open",
+    "start": "npm run serve:documentation"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "18.2.x",
+    "@angular/common": "18.2.x",
+    "@angular/compiler": "18.2.x",
+    "@angular/core": "18.2.x",
+    "@angular/forms": "18.2.x",
+    "@angular/platform-browser": "18.2.x",
+    "@angular/platform-browser-dynamic": "18.2.x",
+    "@angular/router": "18.2.x",
+    "rxjs": "7.8.x",
+    "tslib": "^2.7.x",
+    "zone.js": "0.14.x"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "18.2.x",
+    "@angular/cli": "18.2.x",
+    "@angular/compiler-cli": "18.2.x",
+    "@types/jasmine": "5.1.x",
+    "http-server": "14.1.x",
+    "jasmine-core": "5.3.x",
+    "karma": "6.4.x",
+    "karma-chrome-launcher": "3.2.x",
+    "karma-coverage": "2.2.x",
+    "karma-jasmine": "5.1.x",
+    "karma-jasmine-html-reporter": "2.1.x",
+    "ng-packagr": "18.2.x",
+    "rimraf": "6.0.x",
+    "typescript": "5.5.x"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@scope/core",
+  "version": "1.0.0",
+  "dependencies": {
+    "@scope/core-button": "1.0.0",
+    "@scope/core-id": "1.0.0",
+    "@scope/core-input": "1.0.0",
+    "@scope/core-label": "1.0.0",
+    "@scope/core-textarea": "1.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0"
+  },
+  "sideEffects": false
+}
